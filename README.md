@@ -5,6 +5,8 @@
 Usage
 
 ```sh
-version=$(git describe --tags --abbrev=0)
-curl -sL https://raw.githubusercontent.com/expelledboy/bump/bump.sh | bash -s -- $version minor
+export version=$(git describe --tags --abbrev=0)
+bash <(curl -sL https://git.io/bump.sh) $version minor
 ```
+
+Used (git.io)[https://github.blog/2011-11-10-git-io-github-url-shortener/] for url shortener.
